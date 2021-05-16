@@ -34,7 +34,7 @@ RUN pip install -r requirements-docker.txt
 RUN pip install -r requirements-detectron2.txt
 
 COPY . /home/appuser/real-time-object-detection-system
-CMD ["python3", "-u", "/home/appuser/real-time-object-detection-system/Detector.py"]
+CMD ["python3", "-u", "/home/appuser/real-time-object-detection-system/detector/Detector.py "]
 
 # #  For developing - infinite process
 # ENTRYPOINT ["tail"]

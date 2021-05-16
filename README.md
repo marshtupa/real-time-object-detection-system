@@ -2,7 +2,7 @@
 
 ## Scheme of project
 
-![image](scheme.svg)
+![image](resources/scheme.svg)
 
 ## Install
 
@@ -60,6 +60,6 @@ pip install -r requirements-detectron2.txt
 ```
 Run application
 ```bash
-python Detector.py
+python detector/Detector.py 
 ```
 
