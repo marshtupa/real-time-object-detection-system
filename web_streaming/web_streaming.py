@@ -7,7 +7,7 @@ output_topic = "distributed-video-output"
 
 consumer = KafkaConsumer(
     output_topic,
-    bootstrap_servers=['localhost:9092'])
+    bootstrap_servers=['192.168.0.100:9092'])
 
 
 @app.route('/')

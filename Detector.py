@@ -7,8 +7,8 @@ import io
 
 input_topic = "distributed-video-input"
 output_topic = "distributed-video-output"
-consumer = KafkaConsumer(input_topic, bootstrap_servers=['host.docker.internal:9092'])
-producer = KafkaProducer(bootstrap_servers='host.docker.internal:9092')
+consumer = KafkaConsumer(input_topic, bootstrap_servers=['192.168.0.100:9092'])
+producer = KafkaProducer(bootstrap_servers='192.168.0.100:9092')
 
 detector = Detectron2Client()
 

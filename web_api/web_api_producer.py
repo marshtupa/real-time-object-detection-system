@@ -7,7 +7,7 @@ import io
 app = Flask(__name__)
 
 input_topic = "distributed-video-input"
-producer = KafkaProducer(bootstrap_servers='localhost:9092')
+producer = KafkaProducer(bootstrap_servers='192.168.0.100:9092')
 
 
 def load_image_from_url():

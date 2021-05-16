@@ -4,7 +4,7 @@ import sys
 import cv2
 
 input_topic = "distributed-video-input"
-producer = KafkaProducer(bootstrap_servers='localhost:9092')
+producer = KafkaProducer(bootstrap_servers='192.168.0.100:9092')
 
 
 def publish_camera():

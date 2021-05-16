@@ -8,7 +8,7 @@
 
 ### 1. Kafka
 
-####[Download Page](https://kafka.apache.org/downloads)  
+#### [Download Page](https://kafka.apache.org/downloads)  
 Click on: *source download: kafka-\*-src.tgz*
 
 - Extract .tgz archive to project directory
@@ -32,14 +32,13 @@ There are 2 options: **Run in Docker container** or **Run locally**
 
 #### Run in Docker container
 
-Install [Docker Desktop](https://www.docker.com/products/docker-desktop). It helps app to get access from container to kafka.<br>
-App will find Kafka cluster like: `host.docker.internal:9092`
-
 ```bash
 docker run marshtupa18/real-time-object-detection-system:latest
 ```
 
 ##### OPTIONAL: Build your own image
+
+Add more RAM for you docker-machine to avoid problem during building
 
 ```bash
 docker build . -f Dockerfile -t <NEW_IMAGE_NAME>
@@ -64,4 +63,3 @@ Run application
 python Detector.py
 ```
 
-### 

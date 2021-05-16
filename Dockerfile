@@ -28,9 +28,9 @@ ENV PILLOW_VERSION=7.0.0
 RUN mkdir real-time-object-detection-system
 WORKDIR /home/appuser/real-time-object-detection-system
 
-COPY requirements.txt /home/appuser/real-time-object-detection-system
+COPY requirements-docker.txt /home/appuser/real-time-object-detection-system
 COPY requirements-detectron2.txt /home/appuser/real-time-object-detection-system
-RUN pip install -r requirements.txt
+RUN pip install -r requirements-docker.txt
 RUN pip install -r requirements-detectron2.txt
 
 COPY . /home/appuser/real-time-object-detection-system
