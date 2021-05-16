@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link type="text/css" rel="stylesheet" href="css/custom.css" />
+</head>
+
+<body>
+	<h1 style="text-align:center;">Web API</h1>
+	<br>
+	<div style="text-align:center;">
+		<form action="/detect" method="POST" enctype="multipart/form-data">
+			<input type="file" name="file" />
+			<input name="submit" type="submit" />
+		</form>
+		<br>
+		<form action="/detect" method="GET" enctype="multipart/form-data">
+			<input type="text" name="url">
+			<input type="submit" />
+		</form>
+		<br>
+		<form action="/detect" method="GET" enctype="multipart/form-data">
+			<select name="url">
+				<option value="https://www.zicla.com/wp-content/uploads/2020/02/200209_UCLA-releases-a-report-on-tactical-transit-lanes.jpg">City</option>
+				<option value="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/ph163819-priority-1580934887.jpg?resize=980:*">Kitchen</option>
+			</select>
+			<input type="submit" value="Submit" name="url">
+		</form>
+	</div>

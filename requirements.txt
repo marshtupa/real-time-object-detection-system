@@ -1,0 +1,8 @@
+flask~=2.0.0
+numpy~=1.19.5
+pillow~=8.2.0
+opencv-python~=4.5.2.52
+requests==2.22.0
+torch==1.8
+torchvision==0.9
+kafka-python==2.0.2
