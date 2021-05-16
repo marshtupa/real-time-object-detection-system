@@ -1,1 +1,67 @@
-# real-time-object-detection-system
+# Real-time object detection system
+
+## Scheme of project
+
+![image](scheme.svg)
+
+## Install
+
+### 1. Kafka
+
+####[Download Page](https://kafka.apache.org/downloads)  
+Click on: *source download: kafka-\*-src.tgz*
+
+- Extract .tgz archive to project directory
+- Rename directory to "kafka"
+
+#### Run ZooKeeper
+```bash
+kafka/bin/zookeeper-server-start.sh \
+   kafka/config/zookeeper.properties
+```
+
+#### Run Kafka
+```bash
+kafka/bin/kafka-server-start.sh \
+    kafka/config/server.properties
+```
+
+### 2. Detector
+
+There are 2 options: **Run in Docker container** or **Run locally**
+
+#### Run in Docker container
+
+Install [Docker Desktop](https://www.docker.com/products/docker-desktop). It helps app to get access from container to kafka.<br>
+App will find Kafka cluster like: `host.docker.internal:9092`
+
+```bash
+docker run marshtupa18/real-time-object-detection-system:latest
+```
+
+##### OPTIONAL: Build your own image
+
+```bash
+docker build . -f Dockerfile -t <NEW_IMAGE_NAME>
+```
+
+#### Run locally
+
+Setup virtual environment
+```bash
+pip install virtualenv
+virtualenv venv
+source venv/bin/activate
+```
+
+Install all dependencies
+```bash
+pip install -r requirements.txt
+pip install -r requirements-detectron2.txt
+```
+Run application
+```bash
+python Detector.py
+```
+
+### 
