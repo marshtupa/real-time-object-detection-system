@@ -1,5 +1,8 @@
 # Real-time object detection system
 
+## YouTube Demo
+[![IMAGE ALT TEXT](http://img.youtube.com/vi/Lb9YkpU3d9k/0.jpg)](https://youtu.be/Lb9YkpU3d9k "Demo")
+
 ## Scheme of project
 
 ![image](resources/scheme.svg)
